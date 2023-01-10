@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--default-size);
+  line-height: var(--default-lh);
+  color: var(--dark);
+  min-width: 320px;
+}
+
+.container {
+  max-width: var(--main-container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-container {
+  max-width: var(--main-container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+}

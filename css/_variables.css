@@ -1,0 +1,24 @@
+:root {
+  /* шрифты */
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+
+  --default-size: 16px;
+  --default-lh: 20px;
+
+  /* Анимация */
+  --short: 0.3s ease-in-out;
+  /* Цвета */
+  --white: #ffffff;
+  --dark: #333333;
+  --orange: #ff9900;
+  --deep-orange: #e1670e;
+  /* КОнтейнер */
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+
+  --main-container-max-width: 1770px;
+}
