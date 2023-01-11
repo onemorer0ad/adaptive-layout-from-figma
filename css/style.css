@@ -19,11 +19,27 @@
   list-style: none;
 }
 
+.text-reset {
+  margin: 0;
+}
+
+.title-reset {
+  margin: 0;
+}
+
 .btn-reset {
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn {
+  background-color: var(--orange);
+  border-radius: 16px;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color var(--short);
 }
 
 .text {
@@ -183,7 +199,7 @@
 
 #hero {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 .slide {
   position: relative;
@@ -209,7 +225,6 @@
   font-size: 70px;
   line-height: 85px;
   margin-bottom: 24px;
-
   color: #ffffff;
 }
 
@@ -225,15 +240,24 @@
 }
 
 .slider__button {
-  background: #ff9900;
-  border-radius: 16px;
   padding: 25px 39px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
-  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: var(--orange-hover);
+}
+
+.btn:focus {
+  background-color: var(--orange-focus);
+}
+
+.btn:active {
+  background-color: var(--deep-orange);
 }
 
 .section-title {
@@ -245,34 +269,43 @@
   color: #000000;
 }
 
-.about-us-title {
+/* about-us */
+#about-us {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.about-us__title {
   margin: 0;
   margin-bottom: 20px;
 }
 
-.about-us-descr {
+.about-us__descr {
   margin-bottom: 50px;
+  max-width: 1235px;
 }
 
-.special-wrap {
+.about__wrap {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-.special-column {
+.about__column {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  width: calc(870 / 1770 * 100%);
 }
 
-.special-card-big {
+.about__card-big {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 540px;
+  min-height: 622px;
   margin-right: 32px;
 }
 
-.special-card {
+.about__card {
   overflow: hidden;
   width: 868px;
   flex-grow: 1;
@@ -283,7 +316,7 @@
   border-radius: 32px;
 }
 
-.special-card:not(:last-child) {
+.about__card:not(:last-child) {
   margin-bottom: 23px;
 }
 
@@ -309,8 +342,9 @@
   color: #ffffff;
 }
 
-.about-us-btn {
-  border: 3px solid #ff9900;
+.about__btn {
+  border: 3px solid var(--orange);
+  box-sizing: border-box;
   margin-left: auto;
   border-radius: 16px;
   font-family: "Montserrat";
@@ -320,10 +354,27 @@
   line-height: 20px;
   padding: 20px 38px;
   color: #ffffff;
+  transition: background-color var(--short), border-color var(--short);
+}
+
+.about__btn:hover {
+  background-color: var(--orange);
+}
+
+.about__btn:focus {
+  background-color: var(--orange);
+}
+
+.about__btn:active {
+  border-color: var(--deep-orange);
+  background-color: var(--deep-orange);
+  outline: none;
 }
 
 .card-inner {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .card-inner__big {
@@ -345,13 +396,13 @@
   width: 450px;
 }
 
-.work {
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* work */
+#work {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .work__title {
-  margin: 0;
   margin-bottom: 50px;
   font-family: "Montserrat";
   font-style: normal;
@@ -365,15 +416,45 @@
 
 .work__list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .work__item:not(:last-child) {
   margin-right: 85px;
 }
 
+.work__btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  transition: color var(--short);
+}
+
+.work__btn.active {
+  color: var(--deep-orange);
+}
+
+.work__btn:hover {
+  color: var(--orange);
+}
+.work__btn:focus:not(:hover) {
+  outline: 2px solid #ff9900;
+  outline-offset: 5px;
+}
+.work__btn:active {
+  color: var(--deep-orange);
+}
+
 .work__main__consult {
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .work__consultation {
@@ -381,33 +462,65 @@
   margin-right: 142px;
 }
 
+.work__consultation__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
 .work__text {
   margin-bottom: 18px;
 }
 
-.first__work__btn {
-  padding: 20px 38px;
-  background-color: #ff9900;
-  border-radius: 16px;
-  color: #ffffff;
+.work__buttons {
+  margin-bottom: -32px;
 }
 
 .first__work__btn {
+  padding: 20px 38px;
   margin-right: 32px;
+  margin-bottom: 32px;
 }
 
 .second__work__btn {
   border: 1px solid #000000;
+  margin-right: 32px;
+  margin-bottom: 32px;
   border-radius: 16px;
   padding: 20px 38px;
   color: #000000;
+  transition: background-color var(--short), color var(--short),
+    border-color var(--short);
 }
 
+.second__work__btn:hover {
+  background-color: #666666;
+  border-color: #666666;
+  color: var(--white);
+}
+.second__work__btn:focus {
+  background-color: #666666;
+  border-color: #666666;
+  color: var(--white);
+}
+.second__work__btn:active {
+  background-color: #000000;
+  color: var(--white);
+  border-color: #000000;
+}
+
+/* questions */
 #questions {
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .questions__title {
+  margin-bottom: 32px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -422,10 +535,24 @@
 
 .questions__item {
   border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #cacaca;
+  transition: color var(--short), border-color var(--short);
+}
+
+.questions__item:hover,
+.questions__button:hover {
+  color: var(--orange);
+  border-color: var(--orange);
+  cursor: pointer;
+}
+
+.questions__item:focus,
+.questions__button:focus {
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
 .questions__item__title {
-  margin: 0;
   padding: 40px 0;
   font-family: "Montserrat";
   font-style: normal;
@@ -435,6 +562,41 @@
   /* identical to box height, or 133% */
 
   color: #000000;
+}
+
+.questions__button {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+
+  color: #000000;
+}
+
+.questions__button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+  background-image: url(../img/accordion-icon.svg);
+  transition: background-image var(--short);
+}
+
+.questions__button:hover::after {
+  background-image: url(../img/accordion-icon-orange.svg);
+}
+
+#footer {
+  padding-top: 50px;
 }
 
 .footer_wrap {
@@ -508,10 +670,7 @@
 }
 
 .footer__center__button {
-  background: #ff9900;
-  border-radius: 16px;
   padding: 19px 52px;
-  color: #ffffff;
   margin-right: 22px;
 }
 

@@ -17,7 +17,7 @@
 
         <div class="header__left left">
           <a href="#" class="header-logo">
-            <img src="./img/logo.svg" alt="Евклид" />
+            <img src="img/logo.svg" alt="Евклид">
           </a>
         </div>
         <nav class="header__nav center">
@@ -63,7 +63,7 @@
             <h1 class="slider__title">Проектные решения любой сложности</h1>
             <p class="slider__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
               остаются уделом проектантов</p>
-            <button class="btn-reset slider__button">Заказать расчёт</button>
+            <button class="btn-reset btn slider__button">Заказать расчёт</button>
           </div>
         </div>
       </div>
@@ -71,8 +71,8 @@
     <section id="about-us" class="about-us">
       <div class="container ">
         <div>
-          <h2 class="section-title about-us-title">О нас</h2>
-          <p class="text about-us-descr">
+          <h2 class="section-title about-us__title">О нас</h2>
+          <p class="text about-us__descr">
             Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
             внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности.
             А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того,
@@ -83,26 +83,27 @@
             экспериментов.
           </p>
         </div>
-        <div class="special-wrap flex">
-          <div class="special-column">
-            <article class="special-card special-card-big flex" style="background-image: url('img/about_us_big.png');">
+        <div class="about__wrap flex">
+          <div class="about__column">
+            <div class="about__card about__card-big flex" style="background-image: url('img/about_us_big.png');">
               <div class="card-inner card-inner__big">
-                <span class="card-inner__text">Принимая во внимание показатели успешности, перспективное планирование
-                  способствует подготовке и реализации новых принципов</span>
-                <button class="btn-reset about-us-btn">Подробнее</button>
+                <p class="card-inner__text text-reset">Принимая во внимание показатели успешности, перспективное
+                  планирование
+                  способствует подготовке и реализации новых принципов</p>
+                <a href="" class="btn-reset about__btn">Подробнее</a>
               </div>
-            </article>
+            </div>
           </div>
-          <div class="special-column">
-            <article class="special-card small-card flex ">
+          <div class="about__column">
+            <div class="about__card small-card flex ">
               <div class="img-column"><img src="./img/about_us_right_1.png" alt=""></div>
               <div class="special__card__inner">
-                <h3 class="special-title">Консультация с широким активом</h3>
+                <h3 class="about__title">Консультация с широким активом</h3>
                 <span class="text">А также свежий взгляд на привычные вещи — безусловно открывает новые
                   горизонты для как самодостаточных, так и внешне зависимых концептуальных решений</span>
               </div>
-            </article>
-            <article class="special-card small-card  flex">
+            </div>
+            <div class="about__card small-card  flex">
               <div class="img-column"><img src="./img/about_us_right_2.png" alt=""></div>
               <div class="special__card__inner">
                 <h3 class="special-title special-title-big">В своём стремлении повысить</h3>
@@ -110,25 +111,26 @@
                   профессионалов представляет собой интересный эксперимент проверки прогресса профессионального
                   сообщества</span>
               </div>
-            </article>
+            </div>
           </div>
         </div>
+      </div>
     </section>
     <section id="work" class="work">
       <div class="container">
-        <h2 class="work__title">Как мы работаем</h2>
         <div class="work-main">
-          <div class="steps">
+          <h2 class="work__title title-reset">Как мы работаем</h2>
+          <div class="work__steps">
             <ul class="work__list list-reset">
-              <li class="work__item">1 шаг</li>
-              <li class="work__item">2 шаг</li>
-              <li class="work__item">3 шаг</li>
-              <li class="work__item">4 шаг</li>
+              <li class="work__item"><button class="work__btn btn-reset active">1 шаг</button></li>
+              <li class="work__item"><button class="work__btn btn-reset">2 шаг</button></li>
+              <li class="work__item"><button class="work__btn btn-reset">3 шаг</button></li>
+              <li class="work__item"><button class="work__btn btn-reset">4 шаг</button></li>
             </ul>
           </div>
           <div class="work__main__consult">
             <div class="work__consultation">
-              <h3>
+              <h3 class="work__consultation__title title-reset">
                 Проводим консультацию
               </h3>
               <p class="text work__text">Влечёт за собой процесс внедрения и модернизации приоритизации разума
@@ -142,7 +144,7 @@
                 Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные
                 особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
               <div class="work__buttons">
-                <button class="btn-reset first__work__btn">Подробнее</button>
+                <button class="btn-reset btn first__work__btn">Подробнее</button>
                 <button class="btn-reset second__work__btn">Договор</button>
               </div>
             </div>
@@ -153,45 +155,44 @@
     </section>
     <section id="questions" class="questions">
       <div class="container">
-        <h2 class="questions__title">
+        <h2 class="questions__title title-reset">
           Часто задаваемые вопросы
         </h2>
         <ul class="questions__list list-reset">
           <li class="questions__item">
-            <h3 class="questions__item__title">
-              Из чего формируется конечная стоимость проекта?
+            <h3 class="questions__item__title title-reset">
+              <button class="questions__button btn-reset">Из чего формируется конечная стоимость проекта?</button>
             </h3>
-            <img src="./img/+х.svg" alt="">
           </li>
           <li class="questions__item">
-            <h3 class="questions__item__title">
-              У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+            <h3 class="questions__item__title title-reset">
+              <button class="questions__button btn-reset">У меня есть свой проект. Сможем ли мы его доработать /
+                реализовать?</button>
             </h3>
-            <img src="./img/+х.svg" alt="">
           </li>
           <li class="questions__item">
-            <h3 class="questions__item__title">
-              Я выбираю между разными компаниями. В чём ваше отличие?
+            <h3 class="questions__item__title title-reset">
+              <button class="questions__button btn-reset">Я выбираю между разными компаниями. В чём ваше
+                отличие?</button>
             </h3>
-            <img src="./img/+х.svg" alt="">
           </li>
           <li class="questions__item">
-            <h3 class="questions__item__title">
-              Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
+            <h3 class="questions__item__title title-reset">
+              <button class="questions__button btn-reset">Могу ли я делегировать вам работу / согласование с подрядчиком
+                / организацией?</button>
             </h3>
-            <img src="./img/+х.svg" alt="">
           </li>
           <li class="questions__item">
-            <h3 class="questions__item__title">
-              Могу ли я вернуть деньги на каком-либо из этапов работ?
+            <h3 class="questions__item__title title-reset">
+              <button class="questions__button btn-reset">Могу ли я вернуть деньги на каком-либо из этапов
+                работ?</button>
             </h3>
-            <img src="./img/+х.svg" alt="">
           </li>
         </ul>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer_wrap">
         <div class=" footer__wrapper footer__left">
@@ -247,7 +248,7 @@
               <textarea class="footer__center_input" placeholder="Сообщение" name="text" id="" cols="30"
                 rows="10"></textarea>
               <div class="button_block">
-                <input class="footer__center__button" type="submit" id="submit" value="Отправить данные">
+                <input class="footer__center__button btn" type="submit" id="submit" value="Отправить данные">
                 <span class="button_block__span">Согласен на обработку данных</span>
               </div>
             </div>
