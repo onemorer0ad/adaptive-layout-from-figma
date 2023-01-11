@@ -1,6 +1,6 @@
-@import url(./_fonts.css);
-@import url(./_variables.css);
-@import url(./_global.css);
+@import url(_fonts.css);
+@import url(_variables.css);
+@import url(_global.css);
 
 .visually-hidden {
   position: absolute;
@@ -546,7 +546,7 @@
   cursor: pointer;
 }
 
-.questions__item:focus,
+.questions__item:focus-within,
 .questions__button:focus {
   color: var(--orange);
   border-color: var(--orange);
@@ -574,6 +574,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+  outline: none;
   /* identical to box height, or 133% */
 
   color: #000000;
@@ -592,6 +593,9 @@
 }
 
 .questions__button:hover::after {
+  background-image: url(../img/accordion-icon-orange.svg);
+}
+.questions__button:focus::after {
   background-image: url(../img/accordion-icon-orange.svg);
 }
 
