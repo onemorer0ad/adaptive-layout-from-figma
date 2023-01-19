@@ -21,13 +21,7 @@ body {
 }
 
 .container {
-  max-width: var(--main-container-max-width);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-container {
-  max-width: var(--main-container-max-width);
+  max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
   padding-right: var(--container-padding);

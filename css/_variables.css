@@ -18,9 +18,8 @@
   --orange-hover: #ffb84d;
   --orange-focus: #ffb84d;
   --deep-orange: #e1670e;
+  --dark-gray: #666666;
   /* КОнтейнер */
   --container-max-width: 1870px;
   --container-padding: 50px;
-
-  --main-container-max-width: 1770px;
 }
