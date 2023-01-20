@@ -430,7 +430,7 @@ body {
 .hero__wrapper {
   min-height: 620px;
   border-radius: 32px;
-  background-image: url('/img/hero1.png');
+  background-image: url('img/hero1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
