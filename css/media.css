@@ -195,7 +195,7 @@
   .work__consult::after {
     content: '';
     height: 284px;
-    background-image: url(img/work__image.png);
+    background-image: url('../img/work__image.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,7 +259,7 @@
   .hero__wrapper {
     min-height: 308px;
     border-radius: 16px;
-    background-image: url('img/hero320first.jpg');
+    background-image: url('../img/hero320first.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -320,7 +320,7 @@
     margin-right: 0;
     border-radius: 16px;
     background-size: 0;
-    background-image: url('img/about_320.png');
+    background-image: url('../img/about_320.png');
   }
   .about__card-big::before {
     display: inherit;
@@ -400,7 +400,7 @@
 
   .work__consult::after {
     height: 160px;
-    background-image: url(img/work_320.jpg);
+    background-image: url('../img/work_320.jpg');
 
     border-radius: 16px;
     margin-bottom: 16px;
