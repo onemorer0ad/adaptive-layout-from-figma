@@ -1008,7 +1008,7 @@ body {
 .footer__logo {
   display: flex;
   align-items: flex-start;
-  background-image: url("/img/Logo-footer.svg");
+  background-image: url("../img/Logo-footer.svg");
   width: 224px;
   height: 72px;
   margin-bottom: 20px;
